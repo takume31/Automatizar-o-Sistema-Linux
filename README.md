@@ -25,7 +25,9 @@ Utilizaremos o comando **nano ~/scripts/menu.sh**. Esse comando abrirá a pasta 
   
     nano ~/scripts/menu.sh
 
-# Esse script cria um menu interativo no terminal para facilitar tarefas comuns no Linux. Ele usa cores e efeitos visuais, permitindo atualizar o sistema, limpar cache, fazer backup, instalar aplicativos populares, alterar o tema do terminal (PS1), editar/recarregar o **.bashrc** e reiniciar ou desligar o computador.
+# Script principal
+
+Esse script cria um menu interativo no terminal para facilitar tarefas comuns no Linux. Ele usa cores e efeitos visuais, permitindo atualizar o sistema, limpar cache, fazer backup, instalar aplicativos populares, alterar o tema do terminal (PS1), editar/recarregar o **.bashrc** e reiniciar ou desligar o computador.
 
 Além disso, oferece um submenu de temas que aplica cores diferentes ao prompt do terminal e um submenu de instalação que automatiza downloads e instalações via apt, snap, wget e curl.
             
