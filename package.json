@@ -1,22 +1,13 @@
 {
   "name": "automatizar-o-sistema-linux",
   "version": "1.0.0",
-  "description": "<h1>AUTOMAÇÃO DE TAREFAS COM SHELL SCRIPT: COMO O LINUX FACILITA A ROTINA DE TI</h1>",
-  "main": "index.js",
-  "devDependencies": {},
+  "description": "Automação de tarefas com Shell Script no Linux",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/takume31/Automatizar-o-Sistema-Linux.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/takume31/Automatizar-o-Sistema-Linux/issues"
-  },
-  "homepage": "https://github.com/takume31/Automatizar-o-Sistema-Linux#readme"
+  "devDependencies": {
+    "vite": "^5.4.21"
+  }
 }
