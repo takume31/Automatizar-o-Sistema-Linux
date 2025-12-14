@@ -10,7 +10,7 @@ Neste procedimento, será apresentado o processo de criação e configuração d
 
 O script desenvolvido tem como objetivo central facilitar a execução de operações administrativas e rotineiras, oferecendo uma interface textual intuitiva, com uso de cores e efeitos visuais. Entre suas funcionalidades, destacam-se a atualização do sistema, limpeza de cache, realização de backups, instalação automatizada de aplicativos populares, personalização do prompt do terminal (PS1), edição e recarregamento do arquivo .bashrc, além de opções para reiniciar ou desligar o computador.
 
-Adicionalmente, o script inclui submenus especializados, como o menu de temas, que permite alterar dinamicamente a aparência do terminal, e o menu de instalação, que automatiza downloads e instalações utilizando ferramentas como apt, snap, wget e curl. Por fim, será demonstrado como configurar um alias no .bashrc, possibilitando a execução do menu simplesmente ao digitar o comando menu no terminal, tornando o uso mais rápido e eficiente.
+Adicionalmente, o script inclui submenus especializados, como o menu de temas, que permite alterar dinamicamente a aparência do terminal, e o menu de instalação, que automatiza downloads e instalações utilizando ferramentas como apt, snap, wget e curl. Por fim, será demonstrado como configurar um alias no .bashrc, possibilitando a execução do **menu** simplesmente ao digitar o comando menu no terminal, tornando o uso mais rápido e eficiente.
 <p>
   No Terminal
 </p>
