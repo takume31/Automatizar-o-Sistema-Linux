@@ -20,11 +20,11 @@
   height="100",  
   }/>
   
-Primeiro iremos criar uma pasta chamada **scripts**
+Primeiro iremos criar uma pasta chamada **scripts**:
   
     mkdir scripts
 
-Após criar a pasta vamos usar o comando **nano** para criar ou entrar num arquivo ja existente e vamos chamar de **menu.sh**
+Após criar a pasta vamos usar o comando **nano** para criar ou entrar num arquivo ja existente e vamos chamar de **menu.sh**:
   
     nano ~/scripts/menu.sh
 
@@ -213,3 +213,30 @@ Quando você entar no arquivo coloca o Script
         esac
         read -p "Pressione ENTER para continuar..."
     done
+
+### Vamos configurar para nos usarmos o menu se nos escrevermos no Terminal:
+
+    menu
+
+Entramos no arquivo bashrc:
+
+    nano ~/.bashrc
+
+na última linha insira esse código:
+
+    alias menu="bash ~/scripts/menu.sh"
+    
+Após Inserir o comando na última linha vamos aperta 
+
+Para salvar: 
+
+    CTRL + O
+    
+Para opara sair do arquivo e voltar ao Terminal:
+
+    CTRL + X
+    
+Para que o Script possa atualizar:
+    
+    source ~/.bashrc
+    
