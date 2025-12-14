@@ -6,7 +6,19 @@ body {
   line-height: 1.7;
 }
 
-.container {
+.ubuntu{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+}
+.ubuntu-img{
+    width: 300px;
+}
+.ubuntu-img-div{
+    width: 300px;
+}
+.container {    
   max-width: 1000px;
   margin: auto;
 }
@@ -51,7 +63,7 @@ body {
   font-weight: bold;
 }
 
-.terminal-image {
+.terminal-image, .ubuntu-image {
   display: block;
   margin: 20px auto;
   filter: drop-shadow(0 0 12px rgba(88, 166, 255, 0.5));
