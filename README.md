@@ -15,7 +15,7 @@
   No Terminal
 </p>
   
-  <img src="https://raw.githubusercontent.com/seu-usuario/seu-repo/main/img/terminal-logo.png" width="200">
+  <img src="https://brandslogos.com/wp-content/uploads/images/large/terminal-logo.png" width="200">
 
 Primeiro iremos criar uma pasta chamada **scripts**:
   
