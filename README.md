@@ -224,7 +224,7 @@ Abrir o arquivo  ~/.bashrc
 
     nano ~/.bashrc
 
-na última linha insira esse código:
+# Alias para execução do menu interativo
 
     alias menu="bash ~/scripts/menu.sh"
     
