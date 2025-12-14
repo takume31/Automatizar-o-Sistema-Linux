@@ -14,12 +14,9 @@
 <p>
   No Terminal
 </p>
-<img src="https://brandslogos.com/wp-content/uploads/images/large/terminal-logo.png" 
-  style={ 
-  width="150", 
-  height="100",  
-  }/>
   
+  <img src="https://raw.githubusercontent.com/seu-usuario/seu-repo/main/img/terminal-logo.png" width="200">
+
 Primeiro iremos criar uma pasta chamada **scripts**:
   
     mkdir scripts
