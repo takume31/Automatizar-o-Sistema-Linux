@@ -6,11 +6,30 @@
   </h3>
 </li>
 <p>
-  A automação de tarefas é um dos principais fatores que tornam os sistemas Linux amplamente utilizados na área de Tecnologia da Informação. Por meio de Shell Script, é possível reunir comandos, rotinas de manutenção e configurações em um único arquivo executável, reduzindo erros manuais e aumentando a produtividade.</p>
+  A automação de tarefas é um dos principais fatores que tornam os sistemas Linux amplamente utilizados na área de Tecnologia da Informação. Por meio de Shell Script, é possível reunir comandos, rotinas de manutenção e configurações em um único arquivo executável, reduzindo erros manuais e aumentando a produtividade.
+</p>
   <p>
   Este relatório apresenta a análise de um script em Bash, desenvolvido para o sistema Ubuntu Linux, que automatiza tarefas comuns da rotina de TI por meio de um menu interativo no terminal.
 </p>
-<img src="https://brandslogos.com/wp-content/uploads/images/large/terminal-logo.png" style={ with:300px; }/>
+<p>
+  No Terminal
+</p>
+<img src="https://brandslogos.com/wp-content/uploads/images/large/terminal-logo.png" 
+  style={ 
+  width="150", 
+  height="100",  
+  }/>
+  
+Primeiro iremos criar uma pasta chamada **scripts**
+  
+        mkdir scripts
+
+Após criar a pasta vamos usar o comando **nano** para criar ou entrar num arquivo ja existente e vamos chamar de **menu.sh**
+  
+            nano ~/scripts/menu.sh
+
+Quando você entar no 
+            
     #!/bin/bash
     WIDTH=$(tput cols)
     HEIGHT=$(tput lines)
