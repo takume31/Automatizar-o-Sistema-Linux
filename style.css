@@ -1,15 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: "Segoe UI", Tahoma, sans-serif;
+    margin: 0%;
+  font-family: 'Times New Roman', Times, serif;
   background-color: #5effcc;
   color: #ffffff;
   line-height: 1.7;
-  padding: 40px;
 }
 
 .container {
@@ -87,13 +81,13 @@ body {
 }
 
 .footer {
-  margin-top: 60px;
-  text-align: center;
-  border-top: 1px solid #30363d;
+        margin: 0%;
+  border: 5px solid #000000;
   padding-top: 15px;
+  padding: 10px;
 }
 
 .footer-text {
   font-size: 0.9rem;
-  color: #8b949e;
+  color: #000000;
 }
