@@ -22,11 +22,11 @@
   
 Primeiro iremos criar uma pasta chamada **scripts**
   
-        mkdir scripts
+    mkdir scripts
 
 Após criar a pasta vamos usar o comando **nano** para criar ou entrar num arquivo ja existente e vamos chamar de **menu.sh**
   
-            nano ~/scripts/menu.sh
+    nano ~/scripts/menu.sh
 
 Quando você entar no arquivo coloca o Script
             
