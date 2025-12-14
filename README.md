@@ -5,27 +5,29 @@
   Introdução
   </h3>
 </li>
-<p>
-  A automação de tarefas é um dos principais fatores que tornam os sistemas Linux amplamente utilizados na área de Tecnologia da Informação. Por meio de Shell Script, é possível reunir comandos, rotinas de manutenção e configurações em um único arquivo executável, reduzindo erros manuais e aumentando a produtividade.
-</p>
-  <p>
-  Este relatório apresenta a análise de um script em Bash, desenvolvido para o sistema Ubuntu Linux, que automatiza tarefas comuns da rotina de TI por meio de um menu interativo no terminal.
-</p>
+
+Neste procedimento, será apresentado o processo de criação e configuração de um script Bash destinado à automação de tarefas e à melhoria da usabilidade do terminal Linux por meio de um menu interativo. Inicialmente, será criada uma pasta específica para organização dos scripts, seguida da edição do arquivo responsável pelo menu utilizando o editor nano.
+
+O script desenvolvido tem como objetivo central facilitar a execução de operações administrativas e rotineiras, oferecendo uma interface textual intuitiva, com uso de cores e efeitos visuais. Entre suas funcionalidades, destacam-se a atualização do sistema, limpeza de cache, realização de backups, instalação automatizada de aplicativos populares, personalização do prompt do terminal (PS1), edição e recarregamento do arquivo .bashrc, além de opções para reiniciar ou desligar o computador.
+
+Adicionalmente, o script inclui submenus especializados, como o menu de temas, que permite alterar dinamicamente a aparência do terminal, e o menu de instalação, que automatiza downloads e instalações utilizando ferramentas como apt, snap, wget e curl. Por fim, será demonstrado como configurar um alias no .bashrc, possibilitando a execução do menu simplesmente ao digitar o comando menu no terminal, tornando o uso mais rápido e eficiente.
 <p>
   No Terminal
 </p>
   
   <img src="/terminal-logo.png" width="200">
 
-Primeiro iremos criar uma pasta chamada **scripts**:
+Iniciaremos criando uma pasta chamada 'scripts', utilizando o comando **mkdir**.
   
     mkdir scripts
 
-Após criar a pasta vamos usar o comando **nano** para criar ou entrar num arquivo ja existente e vamos chamar de **menu.sh**:
+Utilizaremos o comando **nano ~/scripts/menu.sh**. Esse comando abrirá a pasta ‘scripts’ e, caso o arquivo **menu.sh** ainda não exista, ele será criado automaticamente. Se o arquivo já existir, o comando abrirá o editor para edição do mesmo.
   
     nano ~/scripts/menu.sh
 
-Quando você entar no arquivo coloca o Script
+Esse script cria um menu interativo no terminal para facilitar tarefas comuns no Linux. Ele usa cores e efeitos visuais, permitindo atualizar o sistema, limpar cache, fazer backup, instalar aplicativos populares, alterar o tema do terminal (PS1), editar/recarregar o **.bashrc** e reiniciar ou desligar o computador.
+
+Além disso, oferece um submenu de temas que aplica cores diferentes ao prompt do terminal e um submenu de instalação que automatiza downloads e instalações via apt, snap, wget e curl.
             
     #!/bin/bash
     WIDTH=$(tput cols)
@@ -46,16 +48,16 @@ Quando você entar no arquivo coloca o Script
     # Tema Rosa
     estilo_rosa() {
         echo "" >> ~/.bashrc
-        echo "# Tema Rosa" >> ~/.bashrc
-        echo "PS1=\"${PINK}\u@\h:\w → ${RESET}\"" >> ~/.bashrc
-    }
-
-    # Tema Verde
-    estilo_verde() {
-        echo "" >> ~/.bashrc
-        echo "# Tema Verde" >> ~/.bashrc
-        echo "PS1=\"${GREEN}\u@\h:\w → ${RESET}\"" >> ~/.bashrc
-    }
+          echo "# Tema Rosa" >> ~/.bashrc
+          echo "PS1=\"${PINK}\u@\h:\w → ${RESET}\"" >> ~/.bashrc
+      }
+  
+      # Tema Verde
+        estilo_verde() {
+            echo "" >> ~/.bashrc
+            echo "# Tema Verde" >> ~/.bashrc
+            echo "PS1=\"${GREEN}\u@\h:\w → ${RESET}\"" >> ~/.bashrc
+      }
 
     # Tema Azul
     estilo_azul() {
@@ -215,7 +217,7 @@ Quando você entar no arquivo coloca o Script
 
     menu
 
-Entramos no arquivo bashrc:
+Abrir o arquivo  ~/.bashrc
 
     nano ~/.bashrc
 
@@ -223,17 +225,15 @@ na última linha insira esse código:
 
     alias menu="bash ~/scripts/menu.sh"
     
-Após Inserir o comando na última linha vamos aperta 
+Após inserir o comando na última linha, pressione:
 
-Para salvar: 
+Para salvar o arquivo:
+Pressione Ctrl + O
 
-    CTRL + O
+Para sair do arquivo e retornar ao terminal:
+Pressione Ctrl + X
     
-Para opara sair do arquivo e voltar ao Terminal:
-
-    CTRL + X
-    
-Para que o Script possa atualizar:
+Para configurar o comando de forma que o menu seja executado ao digitar apenas menu no terminal, adicione o seguinte comando:
     
     source ~/.bashrc
     
