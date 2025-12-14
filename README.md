@@ -28,7 +28,7 @@ Após criar a pasta vamos usar o comando **nano** para criar ou entrar num arqui
   
             nano ~/scripts/menu.sh
 
-Quando você entar no 
+Quando você entar no arquivo coloca o Script
             
     #!/bin/bash
     WIDTH=$(tput cols)
